@@ -1,0 +1,12 @@
+<svg width="172.000000" height="117.000000" viewBox="0 0 172 117" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<linearGradient id="paint_linear_0_71_0" x1="0.000000" y1="0.000000" x2="0.000000" y2="117.000000" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A9D9FF"/>
+			<stop offset="1.000000" stop-color="#7AC5FF"/>
+		</linearGradient>
+	</defs>
+	<mask id="mask_0_71" fill="white">
+		<path id="Combined Shape" d="M34.29 37.0386C36.7446 16.1809 54.4827 0 76 0C90.8351 0 103.874 7.69139 111.346 19.304C114.975 18.4511 118.759 18 122.648 18C149.904 18 172 40.1619 172 67.5C172 94.8381 149.904 117 122.648 117L40.0682 117C17.9391 117 0 99.0072 0 76.8119C0 56.5847 14.8988 39.8477 34.29 37.0386Z" clip-rule="evenodd" fill="" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</mask>
+	<path id="Combined Shape" d="M34.29 37.0386C36.7446 16.1809 54.4827 0 76 0C90.8351 0 103.874 7.69139 111.346 19.304C114.975 18.4511 118.759 18 122.648 18C149.904 18 172 40.1619 172 67.5C172 94.8381 149.904 117 122.648 117L40.0682 117C17.9391 117 0 99.0072 0 76.8119C0 56.5847 14.8988 39.8477 34.29 37.0386Z" clip-rule="evenodd" fill="url(#paint_linear_0_71_0)" fill-opacity="1.000000" fill-rule="evenodd" mask="url(#mask_0_71)"/>
+	<path id="Combined Shape" d="" fill="#979797" fill-opacity="0.000000" fill-rule="nonzero"/>
+</svg>
