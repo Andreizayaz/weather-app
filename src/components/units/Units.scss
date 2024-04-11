@@ -1,0 +1,34 @@
+.units {
+  display: flex;
+  column-gap: 9px;
+  align-items: center;
+
+  &::before {
+    display: inline-block;
+    margin-right: 9px;
+    content: "º";
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__item {
+    padding: 15px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.4);
+
+    &_active {
+      color: rgba(255, 255, 255, 1);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    &:first-child {
+      border-right: 1px solid rgb(255, 255, 255);
+    }
+  }
+
+  .btns {
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+  }
+}

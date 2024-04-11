@@ -1,6 +1,10 @@
+import { Top } from "./components/top";
+
 function App() {
   return (
-    <h1>hello</h1>
+    <main>
+      <Top />
+    </main>
   );
 }
 
