@@ -1,14 +1,23 @@
 import { FC, ReactElement } from "react";
-import { ReactComponent as SunIcon } from "src/assets/Sun.svg";
-
 import "./Temperature.scss";
+import { WeatherIcon } from "src/components/hoc";
 
-export const Temperature: FC = (): ReactElement => (
+type TemperaturePropsTypes = {
+  temp: number;
+  iconType: string;
+  desc:string;
+};
+
+export const Temperature: FC<TemperaturePropsTypes> = ({
+  temp,
+  iconType,
+  desc
+}): ReactElement => (
   <div className="temperature">
     <div className="icon-and-degrees">
-      <SunIcon />
-      <h2 className="degrees"> 19º</h2>
+      <WeatherIcon iconType={iconType} />
+      <h2 className="degrees"> {temp}º</h2>
     </div>
-    <div className="desc">Преимущественно солнечно</div>
+    <div className="desc">{desc}</div>
   </div>
 );

@@ -1,18 +1,7 @@
-export const weatherData = [
-  {
-    heading: "Ветер",
-    description: "5 м/c, западный",
-  },
-  {
-    heading: "Давление",
-    description: "752 мм рт. ст.",
-  },
-  {
-    heading: "Влажность",
-    description: "60%",
-  },
-  {
-    heading: "Вероятность дождя",
-    description: "10%",
-  },
-];
+export const WIND = "Ветер";
+export const WIND_UNIT = "м/c";
+export const PRESSURE = "Давление";
+export const PRESSURE_UNIT = "мм рт. ст.";
+export const HUMIDITY = "Влажность";
+export const HUMIDITY_UNIT = "%";
+export const CHANCE_OF_RAIN = "Вероятность дождя";

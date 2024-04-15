@@ -1,12 +1,17 @@
 import { FC, ReactElement } from "react";
-import { weatherData } from "./helpers/consts";
 import { WeatherItem } from "src/components/shared";
 
 import "./Weather.scss";
+import { getWeatherData } from "./helpers/helpers";
+import { ForecastType } from "src/services";
 
-export const Weather: FC = (): ReactElement => (
+type WeatherPropsTypes = {
+  forecast: ForecastType;
+};
+
+export const Weather: FC<WeatherPropsTypes> = ({ forecast }): ReactElement => (
   <ul className="weather">
-    {weatherData.map((item) => (
+    {getWeatherData(forecast).map((item) => (
       <li key={Math.random() * 10} className="weather__item">
         <WeatherItem heading={item?.heading} description={item?.description} />
       </li>
