@@ -2,11 +2,10 @@ import { FC, ReactElement } from "react";
 import { City, Temperature, Units, Weather } from "src/components/entities";
 
 import "./Forecast.scss";
-import { useForecast, useGeoLocation } from "src/components/hooks";
+import { useForecast } from "src/components/hooks";
 
 export const Forecast: FC = (): ReactElement => {
-  const { coords } = useGeoLocation();
-  const { forecast, error, isLoading } = useForecast(coords);
+  const { forecast, error, isLoading } = useForecast();
   return (
     <div className="forecast">
       {error && <h2 className="error">Error occurred</h2>}

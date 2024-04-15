@@ -1,9 +1,11 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { forecastAPI } from "../services/ForecastService";
 import { unitReducer } from "src/components/entities/units/store";
+import { locationReducer } from "src/components/entities/city/store";
 
 const rootReducer = combineReducers({
   unit: unitReducer,
+  location: locationReducer,
   [forecastAPI.reducerPath]: forecastAPI.reducer,
 });
 
