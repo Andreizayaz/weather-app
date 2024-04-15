@@ -26,3 +26,8 @@ export type CoordType = {
   lon: number;
   units?: string;
 };
+
+export type CityType = {
+  city: string;
+  units?: string;
+};

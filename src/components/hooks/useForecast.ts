@@ -20,6 +20,13 @@ export const useForecast = () => {
   }
 
   if (city) {
+    const {
+      data: forecast,
+      error,
+      isLoading,
+    } = forecastAPI.useGetForecastByCityQuery({ city, units });
+
+    return { forecast, error, isLoading };
   }
 
   const {
@@ -28,5 +35,5 @@ export const useForecast = () => {
     isLoading,
   } = forecastAPI.useGetForecastByCoordsQuery({ ...coords, units });
 
-  return { forecast, error, isLoading }; 
+  return { forecast, error, isLoading };
 };

@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { CoordType, ForecastType } from "./types";
+import { CityType, CoordType, ForecastType } from "./types";
 
 export const forecastAPI = createApi({
   reducerPath: "forecastAPI",
@@ -14,6 +14,18 @@ export const forecastAPI = createApi({
         params: {
           lat,
           lon,
+          lang: "ru",
+          appid: "6db7082575af761ae7eb57503c5c652b",
+          units,
+        },
+      }),
+      providesTags: (result) => ["Forecast"],
+    }),
+    getForecastByCity: build.query<ForecastType, CityType>({
+      query: ({ city, units = "metric" }: CityType) => ({
+        url: "",
+        params: {
+          q: city,
           lang: "ru",
           appid: "6db7082575af761ae7eb57503c5c652b",
           units,
