@@ -3,7 +3,17 @@
   justify-content: space-between;
   column-gap: 30px;
 
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
   &__item {
     flex: 1 1 auto;
+
+    @media (max-width: 768px) {
+      flex: none;
+      width: 45%;
+    }
   }
 }

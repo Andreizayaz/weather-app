@@ -7,4 +7,8 @@ body {
   font-weight: 400;
   line-height: 22px;
   background-color: rgb(73, 140, 236);
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
 }

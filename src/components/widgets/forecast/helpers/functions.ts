@@ -1,7 +1,6 @@
 import { CLEARLY_BG, NASTY_BG, clearlyWeather, nastyWeather } from "./consts";
 
 export const changeBodyBg = (tempDesc: string) => {
-  debugger;
   if (clearlyWeather.includes(tempDesc)) {
     document.body.style.backgroundColor = CLEARLY_BG;
     return;
