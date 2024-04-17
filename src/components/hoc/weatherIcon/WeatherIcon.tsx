@@ -1,5 +1,5 @@
 import { FC, ReactElement } from "react";
-import { CLOUD, PARTLY_CLOUDY, RAIN, STORM, SUN } from "./helpers/consts";
+import { CLOUD, PARTLY_CLOUDY, RAIN, STORM, SUN } from "src/global/helpers/consts";
 import { ReactComponent as CloudIcon } from "src/assets/Cloud.svg";
 import { ReactComponent as RainIcon } from "src/assets/Rain.svg";
 import { ReactComponent as StormIcon } from "src/assets/Storm.svg";
